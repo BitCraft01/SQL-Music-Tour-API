@@ -5,6 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class StageEvent extends Model {
     static associate(models) {
+      // define association here
     }
   };
   StageEvent.init({
@@ -24,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'StageEvent',
-    tableName: 'stages_events',
+    tableName: 'stage_events',
     timestamps: false,
   })
   return StageEvent
